@@ -1,0 +1,235 @@
+.antic-slab-regular {
+    font-family: "Antic Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Antic Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #cbe2fe;
+    color: #000000;
+    margin: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 130px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 18px;
+    background-color: #244b74;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* make nav bar the top stack so that it is always "floating" on the top */
+    z-index: 5;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+#dashboard {
+    border: 1.5px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 43px;
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: normal;
+    padding: 15px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+#citation-text {
+    font-size: 10px;
+    text-align: center;
+}
+
+#citation a {
+    color: inherit;
+}
+
+#spending {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#spending label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 27px;
+}
+
+#spending input,
+#spending select,
+#spending textarea {
+    width: 80%;
+    min-width: 0;
+    padding: 12px;
+    font: inherit;
+    font-size: 16px;
+    color: #172b42;
+    background-color: #f5f9ff;
+    border: 1px solid #819ab7;
+    border-radius: 10px;
+}
+
+#spending textarea {
+    padding-bottom: 0px;
+}
+
+#entry-confirm {
+    margin: 0;
+    font-size: 20px;
+}
+
+#spending button {
+    padding: 14px;
+    font: inherit;
+    font-size: 20px;
+    color: white;
+    background-color: #244b74;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#budget-setting,
+#manage-spending {
+    width: 100%;
+    margin: 0;
+}
+
+#budget-input {
+    font: inherit;
+}
+
+#save-budget {
+    display: block;
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: auto;
+    color: white;
+    font: inherit;
+    background-color: #244b74;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#settings button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    font: inherit;
+    cursor: pointer;
+}
+
+@media (width > 700px) {
+    body {
+        margin: 0;
+        padding: 24px 40px 110px;
+        box-sizing: border-box;
+    }
+
+    header,
+    main {
+        width: 100%;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    main {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    #dashboard {
+        font-size: 28px;
+        padding: 24px;
+    }
+
+    #spending {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        align-items: start;
+    }
+
+    #entry-confirm,
+    #submit-form {
+        grid-column: span 2;
+    }
+
+    #budget-setting {
+        margin-bottom: 32px;
+    }
+
+    #budget-input {
+        padding: 10px;
+        font: inherit;
+    }
+
+    #save-budget {
+        margin-left: 0;
+        padding: 10px 20px;
+    }
+
+    #manage-spending {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        align-items: start;
+    }
+
+    #manage-spending > h2 {
+        grid-column: span 2;
+        margin: 0;
+    }
+
+    nav {
+        font-size: 19px;
+    }
+
+    nav .material-symbols-outlined {
+        font-size: 25px;
+    }
+}
+
+.dark-theme {
+    background-color: #172b42;
+    color: #f5f9ff;
+}

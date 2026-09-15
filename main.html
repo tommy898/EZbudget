@@ -1,0 +1,94 @@
+<!--This page shows user's total spending amount and how many
+percents they already spend based on their monthly budget.
+The page also has instructions to use the app and privacy notes
+that inform users what datas are used
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>EZbudget</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+            rel="stylesheet"
+        >
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&amp;display=block"
+        >
+    </head>
+    <body>
+        <header>
+            <h1>EZbudget</h1>
+            <br>
+        </header>
+        <main>
+            <section id="dashboard">
+                <p>
+                    You spent <span id="total-spending"></span> this month,
+                    <span id="percentage-budget"></span>.
+                </p>
+            </section>
+            <section>
+                <h2>How to use this App</h2>
+                <ul>
+                    <li>This Home page shows how much money you spent in total this month.</li>
+                    <li>Go to "Add" to add a spending to start tracking your money.</li>
+                    <li>You can set your monthly budget in "Manage"</li>
+                    <li>See settings for language, dark/light mode</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Privacy Notes</h2>
+                <ul>
+                    <li>localStorage is used to store your data.</li>
+                    <li>Specifically, it stores all your spending in a list.</li>
+                    <li>It also stores your monthly budget, which is a single number</li>
+                    <li>Lastly, it stores your theme preference (default/dark)</li>
+                </ul>
+            </section>
+            <section>
+                <h3 id="citation-text">
+                    The font and icons are
+                    <span id="citation"
+                        ><a href="https://fonts.google.com/icons">Google Font</a></span
+                    >
+                    All other content made by Tommy Z.
+                </h3>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <a href="main.html">
+                    <div>
+                        <span class="material-symbols-outlined">home</span>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="add.html">
+                    <div>
+                        <span class="material-symbols-outlined">add_box</span>
+                        <p>Add</p>
+                    </div>
+                </a>
+                <a href="manage.html">
+                    <div>
+                        <span class="material-symbols-outlined">list</span>
+                        <p>Manage</p>
+                    </div>
+                </a>
+                <a href="settings.html">
+                    <div>
+                        <span class="material-symbols-outlined">build</span>
+                        <p>Settings</p>
+                    </div>
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
